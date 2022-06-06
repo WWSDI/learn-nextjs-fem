@@ -10,6 +10,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@mdx-js/react": "^2.1.1",
     "@theme-ui/presets": "^0.14.5",
     "body-parser": "^1.19.0",
     "dotenv-load": "^2.0.0",
