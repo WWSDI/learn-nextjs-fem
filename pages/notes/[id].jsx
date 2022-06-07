@@ -10,6 +10,7 @@ export default () => {
   return (
     <div sx={{ variant: "containers.page" }}>
       <h1>Note: {id} </h1>
+      <h2>This is a page created by [id].jsx dynamic route page</h2>
     </div>
   );
 };
