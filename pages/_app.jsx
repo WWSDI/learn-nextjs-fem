@@ -5,7 +5,7 @@ import theme from "../theme"
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      {console.log(theme)}
+      {/* {console.log(theme)} */}
       <Component {...pageProps} />
     </ThemeProvider>
   );
