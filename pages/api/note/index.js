@@ -1,5 +1,7 @@
 import nc from "next-connect";
-import notes from "../../src/data/data";
+import notes from "../../../src/data/data";
+
+console.log('🥰', notes)
 
 const handler = nc()
   // GET all ntoes

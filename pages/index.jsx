@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui";
 import Link from "next/link";
 
-export default () => (
+const handler = () => (
   <div sx={{ height: `calc(100vh - 60px)` }}>
     <div
       sx={{
@@ -23,3 +23,11 @@ export default () => (
     </div>
   </div>
 );
+export default handler;
+
+export function getStaticProps(context){
+  console.log(context)
+  return {
+    props:{}
+  }
+}

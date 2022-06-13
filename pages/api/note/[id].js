@@ -1,5 +1,5 @@
 import nc from "next-connect";
-import notes from "../../src/data/data";
+import notes from "../../../src/data/data";
 
 const getNote = (id) => notes.find((note) => note.id == id);
 const getNoteIdx = (id) => notes.findIndex((note) => note.id == id);
