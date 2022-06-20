@@ -36,7 +36,7 @@ const handler = ({ notes }) => {
 export default handler;
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/note`);
+  const res = await fetch(`${process.env.API_URL}/api/note`);
   const { notes } = await res.json();
   return {
     props: { notes },

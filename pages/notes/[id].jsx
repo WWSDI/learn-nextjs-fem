@@ -21,7 +21,7 @@ export default handler
 
 export async function getServerSideProps({ params, req, res }) {
   
-  const response = await fetch(`http://localhost:3000/api/note/${params.id}`);
+  const response = await fetch(`${process.env.API_URL}/api/note/${params.id}`);
   console.log("🌸", params.id);
   console.log("🌸", response.ok, response.status);
   console.log("🌸", response);
