@@ -1,7 +1,9 @@
 import nc from "next-connect";
 import notes from "../../../src/data/data";
 
-const getNote = (id) => notes.find((note) => note.id == id);
+console.log('☢️', notes)
+
+const getNote = (id) => notes.find((note) => { console.log('❌',note.id, id); note.id == id});
 const getNoteIdx = (id) => notes.findIndex((note) => note.id == id);
 
 const handler = nc()
