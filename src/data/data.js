@@ -6,5 +6,5 @@ const notes = Array.from({ length: 15 }, (_, i) => ({
   id: Date.now() + i,
 }));
 
-// module.exports = notes
-export default notes;
+module.exports = notes
+// export default notes;
